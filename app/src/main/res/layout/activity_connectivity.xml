@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connectivity"
+    android:background="@drawable/bg4">
+
+    <TextView
+        android:id="@+id/tv22"
+        android:layout_width="372dp"
+        android:layout_height="75dp"
+        android:gravity="center|left"
+        android:text="Connectivity Test"
+        android:textColor="#1F285E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="407dp"
+        android:layout_height="382dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409">
+
+        <TextView
+            android:id="@+id/tv28"
+            android:layout_width="138dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="Airplane Mode"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/tv26"
+            android:layout_width="138dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="GPS"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/tv23"
+            android:layout_width="132dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="Network"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/tv24"
+            android:layout_width="138dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="Bluetooth"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/tv25"
+            android:layout_width="132dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="Cellular"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/iv19"
+            android:layout_width="133dp"
+            android:layout_height="126dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/wifi" />
+
+        <ImageView
+            android:id="@+id/iv20"
+            android:layout_width="140dp"
+            android:layout_height="128dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/bluetooth" />
+
+        <ImageView
+            android:id="@+id/iv21"
+            android:layout_width="128dp"
+            android:layout_height="137dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/network" />
+
+        <ImageView
+            android:id="@+id/iv22"
+            android:layout_width="133dp"
+            android:layout_height="126dp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/gps" />
+
+        <ImageView
+            android:id="@+id/iva"
+            android:layout_width="127dp"
+            android:layout_height="154dp"
+            android:layout_marginRight="35dp"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/airplane" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

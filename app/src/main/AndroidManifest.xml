@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mdt">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.hardware.sensor.proximity" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name=" android.permission.USE_BIOMETRIC" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Testtouch"></activity>
+        <activity android:name=".Testearpiece" />
+        <activity android:name=".Testspeaker" />
+        <activity android:name=".Testvibration" />
+        <activity android:name=".orientation" />
+        <activity android:name=".Progress" />
+        <activity android:name=".Testgravity" />
+        <activity android:name=".Testpedometer" />
+        <activity android:name=".Gravity" />
+        <activity android:name=".Pedometer" />
+        <activity android:name=".Testgyroscope" />
+        <activity android:name=".Gyroscope" />
+        <activity
+            android:name=".Testcompass"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Testaccelerometer" />
+        <activity android:name=".Testbluetooth" />
+        <activity android:name=".Testairplane" />
+        <activity android:name=".Airplanemode" />
+        <activity android:name=".Testcellular" />
+        <activity android:name=".Testnetwork" />
+        <activity android:name=".Testfrontcamera" />
+        <activity android:name=".Testcamera" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".Testgps" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".CPUinfo" />
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Batteryinfo" />
+        <activity android:name=".Deviceinfo" />
+        <activity android:name=".Memoryinfo" />
+        <activity android:name=".Phoneinfo" />
+        <activity android:name=".Charger" />
+        <activity android:name=".Lightsensor" />
+        <activity android:name=".Flash" />
+        <activity android:name=".Backcamera" />
+        <activity android:name=".Frontcamera" />
+        <activity android:name=".GPS" />
+        <activity android:name=".Cellular" />
+        <activity android:name=".Bluetooth" />
+        <activity android:name=".Network" />
+        <activity android:name=".Proximity" />
+        <activity android:name=".Fingerprint" />
+        <activity android:name=".Vibration" />
+        <activity android:name=".Buttons" />
+        <activity android:name=".Headphones" />
+        <activity android:name=".Earpiece" />
+        <activity android:name=".Microphone" />
+        <activity android:name=".Speaker" />
+        <activity android:name=".Accelerometer" />
+        <activity android:name=".Compass" />
+        <activity android:name=".Touchscreen" />
+        <activity android:name=".Camera" />
+        <activity android:name=".Connectivity" />
+        <activity android:name=".Hardware" />
+        <activity android:name=".Sound" />
+        <activity android:name=".Motion" />
+        <activity android:name=".Position" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

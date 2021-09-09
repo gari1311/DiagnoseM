@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg4">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="399dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="Test Category"
+        android:textColor="#1F285E"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="347dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_weight="1.75"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="136dp"
+            android:layout_height="34dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="Connectivity"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="119dp"
+            android:layout_height="35dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:gravity="center"
+            android:text="Sound"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="133dp"
+            android:layout_height="36dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="Motion"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="140dp"
+            android:layout_height="131dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:srcCompat="@drawable/position" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="123dp"
+            android:layout_height="131dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            app:srcCompat="@drawable/sound_icon" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="133dp"
+            android:layout_height="130dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:srcCompat="@drawable/motion_icon" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="Position"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="138dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            app:srcCompat="@drawable/hardware_icon" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="Hardware"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="118dp"
+            android:layout_height="38dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:gravity="center"
+            android:text="Camera"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="134dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            app:srcCompat="@drawable/connect_icon" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            android:layout_width="122dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            app:srcCompat="@drawable/camera_icon" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="----------OR----------"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="About Phone"
+        android:textColor="#090202"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Generate Report"
+        android:textColor="#090202"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

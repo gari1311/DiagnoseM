@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg17"
+    tools:context=".Testgps">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:text="Testing GPS"
+            android:textColor="#F6F7FA"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="156dp"
+            android:layout_height="109dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.996"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            app:srcCompat="@drawable/gpsinfoicon" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FBFBFB"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#DC0023D4"
+                    app:cardBackgroundColor="#5EFFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <fragment
+                        android:id="@+id/google_map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="367dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#85FFFFFF"
+                            app:cardCornerRadius="10dp">
+
+
+                            <TextView
+                                android:id="@+id/TV8"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Latitude :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#5EFFFFFF"
+                            app:cardCornerRadius="10dp">
+
+
+                            <TextView
+                                android:id="@+id/TV9"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Longitude :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#5EFFFFFF"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/TV10"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Country :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+
+                        </androidx.cardview.widget.CardView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#5EFFFFFF"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/TV11"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="State :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#5EFFFFFF"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/TV12"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Locality :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="#DC0023D4"
+                            android:paddingBottom="8dp"
+                            app:cardBackgroundColor="#5EFFFFFF"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/TV13"
+                                android:layout_width="291dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="PIN Code :"
+                                android:textColor="#1F285E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.47"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.244" />
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="31dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/gps" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Save Result" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

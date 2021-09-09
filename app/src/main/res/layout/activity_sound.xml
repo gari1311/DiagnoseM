@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sound"
+    android:background="@drawable/bg4">
+
+    <TextView
+        android:id="@+id/tv13"
+        android:layout_width="372dp"
+        android:layout_height="75dp"
+        android:gravity="center|left"
+        android:text="Sound Test"
+        android:textColor="#1F285E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="390dp"
+        android:layout_height="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388">
+
+        <TextView
+            android:id="@+id/tv17"
+            android:layout_width="137dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Headphones"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/tv16"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Earpiece"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="137dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Microphone"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/iv9"
+            android:layout_width="133dp"
+            android:layout_height="127dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/speaker" />
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Speaker"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/iv10"
+            android:layout_width="137dp"
+            android:layout_height="129dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/microphone" />
+
+        <ImageView
+            android:id="@+id/iv11"
+            android:layout_width="122dp"
+            android:layout_height="127dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/earpiece" />
+
+        <ImageView
+            android:id="@+id/iv12"
+            android:layout_width="134dp"
+            android:layout_height="136dp"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/headphone" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

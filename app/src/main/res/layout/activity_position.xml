@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".Position">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="408dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388">
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="137dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="Orientation"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Proximity"
+            android:textColor="#1F285E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/iv26"
+            android:layout_width="124dp"
+            android:layout_height="120dp"
+            app:layout_column="1"
+            app:layout_gravity="center|center_vertical"
+            app:layout_row="0"
+            app:srcCompat="@drawable/proximity" />
+
+        <ImageView
+            android:id="@+id/Img3"
+            android:layout_width="136dp"
+            android:layout_height="129dp"
+            android:src="@drawable/orientation"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/iv8"
+            android:layout_width="138dp"
+            android:layout_height="122dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/compass" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="137dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="Compass"
+            android:textColor="#1F285E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="372dp"
+        android:layout_height="75dp"
+        android:gravity="center|left"
+        android:text="Position Test"
+        android:textColor="#1F285E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
